@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Select2 (Multiple) dengan bootstrap</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/plugins/select2/css/select2.min.css" rel="stylesheet" />
+  <link href="bootstrap/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" />	
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">	
+		<form class="form-horizontal" action="?" method="post">	
+			<label class="form-label">Programming Skill</label>
+			<select name="agama" class="form-control pilihan"  multiple="multiple" required>
+				<option value="bootstrap">Bootstrap</option>
+				<option value="css3">Javascript</option>
+				<option value="php">PHP</option>
+				<option value="mysql">MySQL</option>
+				<option value="yii2">Yii2</option>
+				<option value="laravel">Laravel</option>
+			</select>							
+		</form>
+		</div>
+	</div>
+</div>
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/plugins/select2/js/select2.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".pilihan").select2({
+			theme: "bootstrap"
+		});
+	});
+</script>
+</body>
+</html>

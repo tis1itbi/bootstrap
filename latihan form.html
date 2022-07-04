@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Design Form dengan Bootstrap</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Form Registrasi Mahasisswa</h2>
+				<form action="fdsf" method="post">
+				<u><h4>Informasi Login</h4></u>
+				<div class="form-group">
+				<label for="nim">Username</label>
+				<input type="text" class="form-control" name="nim" placeholder="Isikan Username">
+				</div>
+				<div class="form-group">
+				<label for="nim">Email</label>
+				<input type="email" class="form-control" name="nim" placeholder="Isikan Email yang aktif">
+				</div>
+
+				<div class="form-group">
+				<label for="nim">Password</label>
+				<input type="password" class="form-control" name="nim" placeholder="Isikan Password min. 8 karakter">
+				</div>
+
+				<div class="form-group">
+				<label for="nim">Ulangi password</label>
+				<input type="password" class="form-control" name="nim" placeholder="Ulangi Password">
+				</div>
+
+				<u><h4>Data Diri</h4></u>
+
+				<div class="form-group">
+				<label for="nim">NIM</label>
+				<input type="text" class="form-control" name="nim" placeholder="Isikan NIM">
+				</div>
+
+				<div class="form-group">
+				<label for="jurusan">Jurusan</label><br>
+				<input type="radio" name="jurusan" value="Mahasiswa"> Teknik Informatika
+			    <input type="radio" name="jurusan" value="Wiraswasta"> Manajemen Informatika
+			    <input type="radio" name="jurusan" value="Lainnya"> Teknik Komputer
+				</div>
+
+				<div class="form-group">
+				<label for="nama">Nama Lengkap</label>
+				<input type="text" class="form-control" name="nama" placeholder="Isikan Nama Lengkap">
+				</div>
+
+				<div class="form-group">
+				<label for="nama">Tanggal lahir</label>
+				<input type="date" class="form-control" name="nama">
+				</div>
+
+				<div class="form-group">
+				<label for="nama">Jumlah bersaudara(kandung)</label>
+				<input type="number" class="form-control" name="nama" placeholder="cth: 5">
+				</div>
+
+				
+				<div class="form-group">
+				<label for="nama">Jenis Kelamin</label>
+				 <select name="jenis_kelamin" class="form-control">
+			        <option value="Laki-laki">Laki-laki</option>
+			        <option value="Perempuan">Perempuan</option>
+			        <option value="Lainnya" selected>-Pilih Jenis Kelamin-</option>
+			    </select>
+				</div>
+				<div class="form-group">
+				<label for="alamat">Alamat</label>
+				<textarea name="alamat"class="form-control" placeholder="Isikan Alamat Lengkap"></textarea>
+				</div>
+
+				<div class="form-group">
+				<label for="file_upload">Foto Terbaru</label>
+    				<input type="file" class="form-control" name="file_upload">
+				</div>
+
+				<div class="form-group">
+				<label for="alamat"> Hobby</label><br>
+    				 <input type="checkbox" name="hobby1" value="Membaca"> Membaca<br>
+				    <input type="checkbox" name="hobby2" value="Browsing"> Browsing<br>
+				    <input type="checkbox" name="Hobby3" value="Coding"> Coding<br>
+				</div>
+
+				<div class="form-group">
+				<label for="alamat">Warna Kesukaan</label>
+    				<input type="color" name="warna_kesuakaan">
+				</div>
+
+				<div class="form-group">
+				<input type="radio" name="pekerjaan" value="setuju"> Saya setuju dengan kebijakan layanan dibawah
+				</div>
+
+				<div class="form-group">
+				<label for="alamat">Kebijakan layanan</label>
+				<textarea name="alamat"class="form-control" placeholder="Isikan Alamat Lengkap" disabled>Saya mengisikan data yang sebenarnya dan menyetujui kebijakan layanan bla..bla..bla...dst</textarea>
+				</div>
+
+
+				<button type="submit" class="btn btn-default">Simpan</button>
+				<button type="reset" class="btn btn-default">Batal</button>
+				</form>
+				<br>
+				<br>
+			</div>
+		</div>
+	</div>
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
